@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header > h1 {
+  font-size: 3em;
+  font-weight: 200;
+  color: #575757;
+}
+
+h1:hover {
+  animation: rainbow 2s infinite;
+}
+
+@keyframes rainbow {
+  0%,
+  100% {
+    color: #cb5b6e;
+  }
+  16% {
+    color: #c05ec9;
+  }
+  32% {
+    color: #6173da;
+  }
+  48% {
+    color: #46d3ca;
+  }
+  64% {
+    color: #85cb49;
+  }
+  80% {
+    color: #cbb748;
+  }
+}
+
+input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 8vh;
+  width: 50vw;
+  font-size: 1.2em;
+  font-weight: 200;
+  padding-left: 1vw;
+  color: #686868;
+}
+
+input {
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #dddddd;
+}
+
+input:focus,
+input:hover {
+  box-shadow: 0 0 5px #b382de;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #b382de;
+}
